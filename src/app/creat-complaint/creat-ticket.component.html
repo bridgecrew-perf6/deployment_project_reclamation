@@ -1,0 +1,29 @@
+<form (ngSubmit)="OnSubmit()">
+
+
+    <!-- <div class="form-group">
+        <label>Ticket Number </label>
+        <input type="text" class="form-control" [(ngModel)]="ticket.id}" name="Ticket Number">
+    </div> -->
+    <div class="form-group">
+        <label>User Name </label>
+        <input type="text" class="form-control" [(ngModel)]="ticket.name" name="name">
+    </div>
+
+    <div class="form-group">
+        <label for="exampleInputEmail1">Email address</label>
+        <input type="email" class="form-control" [(ngModel)]="ticket.eamil" name="email">
+    </div>
+
+    <div class="form-group">
+        <label> Problem Description</label>
+        <input type="text" class="form-control" [(ngModel)]="ticket.description" name="Description">
+    </div>
+
+
+
+
+    <br>
+
+    <button type="submit" class="btn btn-primary">Save Réclamation </button>
+</form>

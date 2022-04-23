@@ -1,0 +1,46 @@
+<div class="container">
+
+    <form class="example-container" [formGroup]="options" [style.fontSize.px]="getFontSize()">
+        <button class="material-icons">save</button>
+
+        <p>
+            <br>
+            <br>
+            <div class="example-container">
+                <mat-form-field appearance="fill">
+                    <mat-label>Id Article</mat-label>
+                    <input matInput placeholder="001">
+                </mat-form-field>
+                <mat-form-field appearance="fill">
+                    <mat-label>S/N Article</mat-label>
+                    <input matInput placeholder="0qsdqerfd">
+                </mat-form-field>
+                <mat-form-field appearance="fill">
+                    <mat-label>Name Article</mat-label>
+                    <input matInput placeholder="0qsdqerfd">
+                </mat-form-field>
+
+
+
+            </div>
+            <br>
+            <br>
+
+            <mat-form-field appearance="fill" [color]="colorControl.value">
+                <mat-label>Type</mat-label>
+                <mat-select [formControl]="colorControl">
+                    <mat-option value="primary">Software</mat-option>
+                    <mat-option value="primary">Hardware</mat-option>
+                </mat-select>
+            </mat-form-field>
+            <mat-form-field appearance="fill">
+                <mat-label> Article in Stock</mat-label>
+                <input type="number" matInput placeholder="25">
+            </mat-form-field>
+
+
+
+
+
+    </form>
+</div>
