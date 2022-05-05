@@ -13,3 +13,11 @@
  .demo-button-container {
      padding-bottom: 16px;
  }
+ 
+ .table table-hover {
+     opacity: 0.5;
+ }
+ 
+ .card {
+     opacity: 0.8;
+ }

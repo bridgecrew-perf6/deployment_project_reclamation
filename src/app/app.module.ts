@@ -25,6 +25,11 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import { AddArticleComponent } from './add-article/add-article.component';
 import { MatSelectModule } from '@angular/material/select';
 import { MatIconModule } from '@angular/material/icon'
+import {MatGridListModule} from '@angular/material/grid-list';
+import {MatListModule} from '@angular/material/list';
+import {MatSidenavModule} from '@angular/material/sidenav';
+import {MatCardModule} from '@angular/material/card';
+
 
 
 // import { TicketComponent } from './ticket/ticket.component';
@@ -41,10 +46,15 @@ import { MatIconModule } from '@angular/material/icon'
     UpdateTicketComponent,
     LoginComponent,
     AddArticleComponent,
+
     
    
   ],
   imports: [
+    MatCardModule,
+    MatSidenavModule,
+    MatListModule,
+    MatGridListModule,
     MatIconModule,
     MatInputModule ,
     MatButtonModule,

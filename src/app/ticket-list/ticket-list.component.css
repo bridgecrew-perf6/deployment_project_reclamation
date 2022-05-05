@@ -1,22 +1,27 @@
-button {
-    position: relative;
-    display: inline-block;
+.example-container {
+    width: 1200px;
+    height: 800px;
+    border: 1px solid rgba(204, 34, 34, 0.974);
 }
 
-.demo-table {
-    width: 100%;
+
+/* .example-sidenav-content {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+} */
+
+.button-row {
+    display: table-cell;
+    width: 1000px;
 }
 
-.mat-row .mat-cell {
-    border-bottom: 1px solid transparent;
-    border-top: 1px solid transparent;
-    cursor: pointer;
+.example-sidenav {
+    padding: 300px;
 }
 
-.mat-row:hover .mat-cell {
-    border-color: currentColor;
-}
-
-.demo-row-is-clicked {
-    font-weight: appCustomDirec;
+.mat-list-option {
+    display: 100px !important;
+    text-align: center;
 }

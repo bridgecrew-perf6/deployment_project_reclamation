@@ -15,8 +15,9 @@ interface Food {
   styleUrls: ['./ticket-list.component.css']
 })
 export class TicketListComponent implements OnInit {
+  showFiller = false;
   selectedValue : String ;
-  selectedTicket : Ticket
+  idSelectedTicket : number ;
   displayedColumns: string[] = ['id', 'name', 'eamil', 'satuts','dateCreatinTicket','description'];
   tickets : Ticket[];
   ticket : Ticket
@@ -34,6 +35,11 @@ export class TicketListComponent implements OnInit {
       this.tickets = data
       )
 
+  }
+  private getTicket(idSelectedTicket ){
+    this.serviceTicket.getTicketById(idSelectedTicket).subscribe(data=>
+      this.ticket =data)
+      console.log(idSelectedTicket)
   }
 
   OnSubmit(){
