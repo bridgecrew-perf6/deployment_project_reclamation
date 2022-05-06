@@ -1,5 +1,5 @@
 .card {
-    opacity: 0.95;
-    background-color: rgba(6, 7, 6, 0.035);
-    color: rgb(0, 0, 0);
+    opacity: 0.8;
+    background-color: #ffffff;
+    color: hwb(0 99% 1% / 0);
 }

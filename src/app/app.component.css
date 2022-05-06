@@ -1,5 +1,8 @@
-.container {
+.containere {
+    position: relative;
     background-image: url('../assets/Conteneur-Maritime-Port-de-Lomé-Togo.png');
+    background-position: center;
+    background-size: cover;
     margin: 0px;
     min-height: 100%;
     width: 100%;
