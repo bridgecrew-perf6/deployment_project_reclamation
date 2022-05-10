@@ -1,45 +1,46 @@
-<mat-drawer-container class="example-container" autosize>
-    <mat-drawer #drawer class="example-sidenav" mode="side">
-        <p>A</p>
-        <p *ngIf="showFiller">Lorem, ipsum dolor sit amet consectetur.</p>
-        <button (click)="showFiller = !showFiller" mat-raised-button>
-        Toggle extra text
-      </button>
-    </mat-drawer>
+<mat-card class="card">
+    <mat-card-header>
+        <mat-card-title> Tableau de suivi des réclamations
+        </mat-card-title>
+    </mat-card-header>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th scope="col"> Date</th>
+                <th scope="col">Référence NC</th>
+                <th scope="col">Détéctée par</th>
+                <th scope="col">Client </th>
+                <th scope="col">Commentaires </th>
+                <th scope="col">Action immédiate </th>
+                <th scope="col">Action d’amélioration </th>
+                <th scope="col"> Date</th>
 
-    <div class="example-sidenav-content">
-        <button type="button" mat-button (click)="drawer.toggle()" class="button-row ">
-            <mat-selection-list #shoes [multiple]="false"  >
-               
-                 <table>
-                    <mat-list-option class="mat-list-option">
-                     <tr>
-                      
-                     <th>Client name</th>
-                     <th>date de Creation</th>
-                
-                     
-                    </tr>
-                </mat-list-option>
-                    <tr>
-                        <mat-list-option *ngFor="let ticket of tickets" [value]="ticket">
-                        
-                        <td>{{ticket.name}}</td> 
-                        </mat-list-option>
-                    </tr>
-                 </table>
-            
-                  
 
-             
-              </mat-selection-list>
-              
-              <p>
-                Option selected: {{shoes.selectedOptions.selected[0]?.value}}
-            </p>
-             
-        Toggle sidenav
-      </button>
-    </div>
 
-</mat-drawer-container>
+            </tr>
+        </thead>
+        <tbody *ngFor="let ticket of tickets">
+            <td>{{ticket.dateCreatinTicket | date}}</td>
+            <td>{{ ticket.id}} </td>
+            <td> {{ ticket.detectedBy }} </td>
+            <td>{{ ticket.client }} </td>
+            <td>{{ ticket.commentaires}} </td>
+            <td>{{ ticket.actionImmediate }} </td>
+            <td>{{ ticket.actionAmlioration }} </td>
+
+
+
+        </tbody>
+    </table>
+</mat-card>
+
+<!-- <div class="d-flex justify-content-between p-2">
+  <ngb-pagination [collectionSize]="collectionSize" [(page)]="page" [pageSize]="pageSize" (pageChange)="refreshCountries()">
+  </ngb-pagination>
+
+  <select class="form-select" style="width: auto" [(ngModel)]="pageSize" (ngModelChange)="refreshCountries()">
+    <option [ngValue]="2">2 items per page</option>
+    <option [ngValue]="4">4 items per page</option>
+    <option [ngValue]="6">6 items per page</option>
+  </select>
+</div> -->

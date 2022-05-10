@@ -1,29 +1,58 @@
-<form (ngSubmit)="OnSubmit()">
+<mat-card class="card">
+    <form (ngSubmit)="OnSubmit()">
 
 
-    <!-- <div class="form-group">
+        <!-- <div class="form-group">
         <label>Ticket Number </label>
         <input type="text" class="form-control" [(ngModel)]="ticket.id}" name="Ticket Number">
     </div> -->
-    <div class="form-group">
-        <label>User Name </label>
-        <input type="text" class="form-control" [(ngModel)]="ticket.name" name="name">
-    </div>
 
-    <div class="form-group">
-        <label for="exampleInputEmail1">Email address</label>
-        <input type="email" class="form-control" [(ngModel)]="ticket.eamil" name="email">
-    </div>
-
-    <div class="form-group">
-        <label> Problem Description</label>
-        <input type="text" class="form-control" [(ngModel)]="ticket.description" name="Description">
-    </div>
+        <div class="row g-5">
+            <div class="col-sm">
+                <label>Détéctée par</label>
+                <input type="text" class="form-control" [(ngModel)]="ticket.detectedBy" name="detectedBy">
+            </div>
+            <div class="col-sm">
+                <label>Client</label>
+                <input type="text" class="form-control" [(ngModel)]="ticket.client" name="Client">
+            </div>
+        </div>
 
 
+        <!-- 
+
+        <div class="form-group">
+            <label>Détéctée par</label>
+            <input type="text" class="form-control" [(ngModel)]="ticket.detectedBy" name="detectedBy">
+        </div>
+
+        <div class="form-group">
+            <label>Client </label>
+            <input type="text" class="form-control" [(ngModel)]="ticket.client" name="Client">
+        </div>
+
+ -->
+
+        <div class="form-group">
+            <label for="exampleFormControlTextarea1">Problem Commentaires</label>
+            <textarea class="form-control" [(ngModel)]="ticket.commentaires" name="Commentaires"></textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="exampleFormControlTextarea1">Problem ActionImmediate</label>
+            <textarea class="form-control" [(ngModel)]="ticket.actionImmediate" name="ActionImmediate"></textarea>
+        </div>
 
 
-    <br>
+        <div class="form-group">
+            <label for="exampleFormControlTextarea1">Example textarea</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" [(ngModel)]="ticket.actionAmlioration" name="ActionAmlioration"></textarea>
+        </div>
 
-    <button type="submit" class="btn btn-primary">Save Réclamation </button>
-</form>
+
+
+        <br>
+
+        <button type="submit" class="btn btn-primary">Save Réclamation </button>
+    </form>
+</mat-card>

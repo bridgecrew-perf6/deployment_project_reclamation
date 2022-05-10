@@ -1,27 +1,7 @@
-.example-container {
-    width: 1200px;
-    height: 800px;
-    border: 1px solid rgba(204, 34, 34, 0.974);
+.card {
+    opacity: 0.9;
 }
 
-
-/* .example-sidenav-content {
-    display: flex;
-    height: 100%;
-    align-items: center;
-    justify-content: center;
-} */
-
-.button-row {
-    display: table-cell;
-    width: 1000px;
-}
-
-.example-sidenav {
-    padding: 300px;
-}
-
-.mat-list-option {
-    display: 100px !important;
-    text-align: center;
+.table-striped {
+    border-spacing: 5 px 1 rem;
 }

@@ -18,10 +18,15 @@ export class TicketListComponent implements OnInit {
   showFiller = false;
   selectedValue : String ;
   idSelectedTicket : number ;
-  displayedColumns: string[] = ['id', 'name', 'eamil', 'satuts','dateCreatinTicket','description'];
-  tickets : Ticket[];
+  // displayedColumns: string[] = ['id', 'name','Client','ActionImmediate','ActionAmlioration','detectedBy','eamil', 'satuts','dateCreatinTicket','description'];
+
+ tickets : Ticket[];
   ticket : Ticket
   dataSource  = new MatTableDataSource();
+
+
+
+
   constructor(private serviceTicket : TicketService ) { }
 
   ngOnInit(): void {
@@ -32,8 +37,9 @@ export class TicketListComponent implements OnInit {
   
   private getTickets(){
     this.serviceTicket.getListTicket().subscribe(data=>
-      this.tickets = data
-      )
+      this.tickets = data 
+    )
+      
 
   }
   private getTicket(idSelectedTicket ){
@@ -45,14 +51,14 @@ export class TicketListComponent implements OnInit {
   OnSubmit(){
     this.getTickets();
   }
-  applyFilter(event: Event) {
-    const filterValue = (event.target as HTMLInputElement).value;
-    this.dataSource.filter = filterValue.trim().toLowerCase();
-  }
+  // applyFilter(event: Event) {
+  //   const filterValue = (event.target as HTMLInputElement).value;
+  //   this.dataSource.filter = filterValue.trim().toLowerCase();
+  // }
 
-  changeStatus(){
+  // changeStatus(){
     
-  }
+  // }
   
   
   // showDetails(){

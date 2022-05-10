@@ -34,6 +34,7 @@ export class CreatTicketComponent implements OnInit {
    
     console.log(this.ticket)
     this.saveTicket();
+    console.log(this.ticket)
    }
 
 

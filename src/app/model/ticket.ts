@@ -1,14 +1,19 @@
 export class Ticket {
  
     id : number;
+    ReclamationNumber : String ;
+
     name : String;
-    eamil : String;
-    satuts : String ;
-    description : String ;
+    commentaires : String ;
     note : String ;
     dateCreatinTicket : Date;
-    dateAssign : Date;
     dateEndOfAssit: Date;
+    detectedBy : String ;
+    client : String ;
+    actionImmediate : String ;
+    actionAmlioration :string ;
+
+
 
 
 }
