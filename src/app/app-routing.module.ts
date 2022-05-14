@@ -16,7 +16,7 @@ const routes: Routes = [
   { path: '', redirectTo: 'users',pathMatch:'full'},
   {path: 'update-user/:id',component:UpdateUserComponent},
   {path: "ticket-List", component:TicketListComponent, canActivate:[AuthGuard],data:{roles:['User'] }},
-  {path:"create-ticket",component:CreatTicketComponent , canActivate:[AuthGuard],data:{roles:['User'] }}
+  {path:"create-ticket",component:CreatTicketComponent , canActivate:[AuthGuard],data:{roles:['User' , 'Admin'] }}
 ];
 
 @NgModule({

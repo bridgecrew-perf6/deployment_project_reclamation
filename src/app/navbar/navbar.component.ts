@@ -39,5 +39,10 @@ public getRoleUser() : boolean{
  return this.userService.roleMatch(['User'])
   
 }
+isHomeRoute() {
+
+  if (this.router.url === '/app-login')
+  return true;
+}
 
 }

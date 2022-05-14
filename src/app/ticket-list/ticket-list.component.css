@@ -3,5 +3,11 @@
 }
 
 .table-striped {
-    border-spacing: 5 px 1 rem;
+    border-spacing: 5 px 5 rem;
+}
+
+.test {
+    border: 3 px;
+    width: 5;
+    ;
 }
