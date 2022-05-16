@@ -6,22 +6,18 @@
     <table class="table table-hover table-dark">
         <thead color="primery ">
             <tr>
-                <th>Matrecule</th>
-                <th>First Name</th>
-                <th>Last Name </th>
-                <th>Email address</th>
-                <th>company</th>
-                <th>Action</th>
+                <th>userFirstName</th>
+                <th>userLastName</th>
+                <th>userName</th>
+
 
             </tr>
         </thead>
         <tbody>
             <tr *ngFor=" let user of users ">
-                <td>{{user.matrecule}}</td>
-                <td>{{user.firstName}}</td>
-                <td>{{user.lastName}}</td>
-                <td>{{user.emails}}</td>
-                <td>{{user.company}}</td>
+                <td>{{user.userFirstName}}</td>
+                <td>{{user.userLastName}}</td>
+                <td>{{user.userName}}</td>
                 <td>
                     <button (click)="updateUser(user.id) " class="btn btn-info ">Update</button>
                     <button (click)="delateUser(user.id) " class="btn btn-danger ">Delete</button>

@@ -5,28 +5,26 @@
     <div class="container">
 
         <form (ngSubmit)="OnSubmit()">
-            <div class="form-group">
-                <label>Matrecule </label>
-                <input type="text" class="form-control" id="Matrecule" [(ngModel)]="user.matrecule" name="matrecule">
-            </div>
+
             <div class="form-group">
                 <label>First Name </label>
-                <input type="text" class="form-control" id="FirstName" [(ngModel)]="user.firstName" name="lastName">
+                <input type="text" class="form-control" id="userFirstName" [(ngModel)]="user.userFirstName" name="userFirstName">
             </div>
             <div class="form-group">
                 <label>Last Name </label>
-                <input type="text" class="form-control" id="lastName" [(ngModel)]="user.lastName" name="lastName">
+                <input type="text" class="form-control" id="userLastName" [(ngModel)]="user.userLastName" name="userLastName">
             </div>
 
             <div class="form-group">
-                <label for="exampleInputEmail1">Email address</label>
-                <input type="email" class="form-control" id="emals" [(ngModel)]="user.emails" name="emails">
+                <label for="exampleInputEmail1">userName</label>
+                <input type="email" class="form-control" id="userName" [(ngModel)]="user.userName" name="userName">
             </div>
 
             <div class="form-group">
-                <label>Company </label>
-                <input type="text" class="form-control" id="company" [(ngModel)]="user.company" name="company">
+                <label for="exampleInputEmail1">userPassword</label>
+                <input type="email" class="form-control" id="userPassword" [(ngModel)]="user.userPassword" name="userPassword">
             </div>
+
             <br>
             <button type="submit" class="btn btn-primary">Save User</button>
         </form>
