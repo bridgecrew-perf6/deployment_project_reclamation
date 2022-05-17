@@ -17,16 +17,15 @@
         </thead>
         <tbody>
             <tr *ngFor=" let user of users ">
-                <td>{{user.matrecule}}</td>
-                <td>{{user.firstName}}</td>
-                <td>{{user.lastName}}</td>
-                <td>{{user.emails}}</td>
-                <td>{{user.company}}</td>
-                <td>
-                    <button (click)="updateUser(user.id) " class="btn btn-info ">Update</button>
+                <td>{{user.userName}}</td>
+                <td>{{user.userFirstName}}</td>
+                <td>{{user.userLastName}}</td>
+                <td>{{user.userPassword}}</td>
+                <!-- <td>
+                    <button (click)="updateUser(user.userName) " class="btn btn-info ">Update</button>
                     <button (click)="delateUser(user.id) " class="btn btn-danger ">Delete</button>
 
-                </td>
+                </td> -->
 
 
             </tr>

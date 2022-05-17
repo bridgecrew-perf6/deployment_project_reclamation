@@ -1,13 +1,13 @@
 export class User {
 
   
-        id: number ;
-        lastName :string;
-        firstName :string;
-        emails :string;
-        matrecule  : string;
-        company  : string;
-
+     
+   id  : number ; 
+        userName :String;
+        userFirstName :String;
+        userLastName :String ;
+        userPassword : String;
+	
     
 
 }

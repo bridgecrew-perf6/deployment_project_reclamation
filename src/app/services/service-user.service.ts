@@ -18,11 +18,11 @@ export class ServiceUserService {
 
   getUserList():Observable<User[]>{
     
-      return this.httpClient.get<User[]>('http://localhost:8080/api/V1/users');
+      return this.httpClient.get<User[]>('http://localhost:9090/users');
     }
 
     createUser(user: User) : Observable<Object>{
-      return this.httpClient.post("http://localhost:8080/api/V1/users",user)
+      return this.httpClient.post("http://localhost:9090/registerNewUser",user)
 
     }
 
