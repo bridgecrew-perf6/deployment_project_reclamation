@@ -10,7 +10,6 @@ import { User } from '../model/user';
 export class ServiceUserService {
 
 
-  private baseUrl :"http://localhost:8080/api/V1/users";
                    
  
 
@@ -18,7 +17,7 @@ export class ServiceUserService {
 
   getUserList():Observable<User[]>{
     
-      return this.httpClient.get<User[]>('http://localhost:9090/users');
+      return this.httpClient.get<User[]>('http://localhost:9090/forAdmin');
     }
 
     createUser(user: User) : Observable<Object>{

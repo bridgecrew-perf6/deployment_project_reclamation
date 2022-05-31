@@ -12,17 +12,23 @@ import { ServiceUserService } from '../services/service-user.service';
   export class UserListComponent implements OnInit {
 
     users: User[];
+     userlist : User[];
  
     constructor(private userServices: ServiceUserService , private route : Router) { }
 
     ngOnInit(): void {
-     
+    //  console.log("apres")
       this.getUser();
+    //   this.userServices.getUserList();
+    //   console.log("hello");
 
     }
       private getUser(){
         this.userServices.getUserList().subscribe(data => 
-        this.users = data     
+          
+        this.users = data 
+
+                
         );
 
 

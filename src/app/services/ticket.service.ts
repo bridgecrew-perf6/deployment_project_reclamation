@@ -14,7 +14,7 @@ export class TicketService {
 
 getListTicket():Observable<Ticket[]> {
 
-  return this.http.get<Ticket[]>("http://localhost:9090/users");
+  return this.http.get<Ticket[]>("http://localhost:9090/tickets");
   
 
 
